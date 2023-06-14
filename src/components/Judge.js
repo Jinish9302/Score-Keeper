@@ -41,12 +41,12 @@ export default function Judge(props) {
                                     <th className="border border-gray-300 px-4 py-2">{score['name']}</th>
                                     <th className="border border-gray-300 px-4 py-2">{score['score']}</th>
                                     <th className="border border-gray-300 px-4 py-2">
-                                        <button onClick={() => { inc_score(score["sn"]-1, -10) }} className="bg-blue-300 rounded-md mx-2 px-4 hover:bg-blue-600">-10</button>
-                                        <button onClick={() => { inc_score(score["sn"]-1, -5) }} className="bg-blue-300 rounded-md mx-2 px-4 hover:bg-blue-600">-5</button>
-                                        <button onClick={() => { inc_score(score["sn"]-1, -1) }} className="bg-blue-300 rounded-md mx-2 px-4 hover:bg-blue-600">-1</button>
-                                        <button onClick={() => { inc_score(score["sn"]-1, 1) }} className="bg-blue-300 rounded-md mx-2 px-4 hover:bg-blue-600">+1</button>
-                                        <button onClick={() => { inc_score(score["sn"]-1, 5) }} className="bg-blue-300 rounded-md mx-2 px-4 hover:bg-blue-600">+5</button>
-                                        <button onClick={() => { inc_score(score["sn"]-1, 10) }} className="bg-blue-300 rounded-md mx-2 px-4 hover:bg-blue-600">+10</button>
+                                        <button onClick={() => { inc_score(score["sn"]-1, -10) }} className="bg-blue-300 rounded-md m-2 px-4 hover:bg-blue-600">-10</button>
+                                        <button onClick={() => { inc_score(score["sn"]-1,  -5) }} className="bg-blue-300 rounded-md m-2 px-4 hover:bg-blue-600">-5</button>
+                                        <button onClick={() => { inc_score(score["sn"]-1,  -1) }} className="bg-blue-300 rounded-md m-2 px-4 hover:bg-blue-600">-1</button>
+                                        <button onClick={() => { inc_score(score["sn"]-1,   1) }} className="bg-blue-300 rounded-md m-2 px-4 hover:bg-blue-600">+1</button>
+                                        <button onClick={() => { inc_score(score["sn"]-1,   5) }} className="bg-blue-300 rounded-md m-2 px-4 hover:bg-blue-600">+5</button>
+                                        <button onClick={() => { inc_score(score["sn"]-1,  10) }} className="bg-blue-300 rounded-md m-2 px-4 hover:bg-blue-600">+10</button>
                                     </th>
                                 </tr>
                             )

@@ -26,9 +26,9 @@ export default function Participant(props) {
             <table>
                 <thead>
                     <tr className="object-cover rounded-lg shadow bg-blue-100">
-                        <th className="px-20 py-2">Rank</th>
-                        <th className="px-20 py-2">Participant Name</th>
-                        <th className="px-20 py-2">Score</th>
+                        <th className="px-5 py-2">Rank</th>
+                        <th className="px-5 py-2">Participant Name</th>
+                        <th className="px-5 py-2">Score</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -36,33 +36,33 @@ export default function Participant(props) {
                         if (score['rank'] === 1) {
                             return (
                                 <tr className="bg-yellow-300 bg-cover rounded-lg shadow">
-                                    <td className="px-20 py-2">👑{score["rank"]}</td>
-                                    <td className="px-20 py-2">{score["name"]}</td>
-                                    <td className="px-20 py-2">{score["score"]}</td>
+                                    <td className="px-5 py-2">👑{score["rank"]}</td>
+                                    <td className="px-5 py-2">{score["name"]}</td>
+                                    <td className="px-5 py-2">{score["score"]}</td>
                                 </tr>
                             );
                         } else if (score['rank'] === 2) {
                             return (
                                 <tr className="bg-gray-300 bg-cover rounded-lg shadow">
-                                    <td className="px-20 py-2">{score["rank"]}</td>
-                                    <td className="px-20 py-2">{score["name"]}</td>
-                                    <td className="px-20 py-2">{score["score"]}</td>
+                                    <td className="px-5 py-2">{score["rank"]}</td>
+                                    <td className="px-5 py-2">{score["name"]}</td>
+                                    <td className="px-5 py-2">{score["score"]}</td>
                                 </tr>
                             );
                         } else if (score['rank'] === 3) {
                             return (
                                 <tr className="bg-amber-700 rounded-lg shadow">
-                                    <td className="px-20 py-2">{score["rank"]}</td>
-                                    <td className="px-20 py-2">{score["name"]}</td>
-                                    <td className="px-20 py-2">{score["score"]}</td>
+                                    <td className="px-5 py-2">{score["rank"]}</td>
+                                    <td className="px-5 py-2">{score["name"]}</td>
+                                    <td className="px-5 py-2">{score["score"]}</td>
                                 </tr>
                             );
                         } else {
                             return (
                                 <tr className="rounded-md shadow">
-                                    <td className="px-20 py-2">{score["rank"]}</td>
-                                    <td className="px-20 py-2">{score["name"]}</td>
-                                    <td className="px-20 py-2">{score["score"]}</td>
+                                    <td className="px-5 py-2">{score["rank"]}</td>
+                                    <td className="px-5 py-2">{score["name"]}</td>
+                                    <td className="px-5 py-2">{score["score"]}</td>
                                 </tr>
                             );
                         }
