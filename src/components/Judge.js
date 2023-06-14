@@ -23,7 +23,7 @@ export default function Judge(props) {
     }
     return (
         <>
-            <div className="mt-20 flex justify-center">
+            <div className="mt-20 mb-16 flex justify-center">
                 <table className="border-collapse rounded-lg shadow">
                     <thead className="bg-blue-200">
                         <tr>

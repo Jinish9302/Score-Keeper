@@ -23,7 +23,7 @@ export default function Participant(props) {
 
     return (
         <div className="mx-0 mt-20 mb-16 flex justify-center">
-            <table className = "w-4/5 border-collapse">
+            <table className = "w-4/5 max-w-screen-sm border-collapse">
                 <thead>
                     <tr className="rounded-lg shadow bg-blue-100">
                         <th className="px-5 py-2">Rank</th>
@@ -36,9 +36,9 @@ export default function Participant(props) {
                         if (score['rank'] === 1) {
                             return (
                                 <tr className="bg-yellow-300 rounded-lg shadow">
-                                    <td className="px-5 py-2">👑{score["rank"]}</td>
-                                    <td className="px-5 py-2">{score["name"]}</td>
-                                    <td className="px-5 py-2">{score["score"]}</td>
+                                    <th className="px-5 py-2">👑{score["rank"]}</th>
+                                    <th className="px-5 py-2">{score["name"]}</th>
+                                    <th className="px-5 py-2">{score["score"]}</th>
                                 </tr>
                             );
                         } else if (score['rank'] === 2) {
