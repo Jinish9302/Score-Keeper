@@ -38,7 +38,6 @@ function App() {
         <Header contest_name={name} />
         <Routes>
           <Route exact path='/' element={
-            <>
               <Workspace
                 set_name={setName}
                 name={name}
@@ -47,7 +46,6 @@ function App() {
                 part_count={participantCnt}
                 set_part_count={setParticipantCount}
               />
-            </>
           }></Route>
           <Route path='/Judge' element={
             <Judge

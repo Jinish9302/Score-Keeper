@@ -19,13 +19,13 @@ export default function Participant(props) {
             }
         }
         setScores([...new_scores])
-    }, [...props.part_scores])
+    }, [props.part_scores])
 
     return (
-        <div className="mx-0 mt-10 mb-16 flex justify-center">
-            <table>
+        <div className="mx-0 mt-20 mb-16 flex justify-center">
+            <table className = "w-4/5 border-collapse">
                 <thead>
-                    <tr className="object-cover rounded-lg shadow bg-blue-100">
+                    <tr className="rounded-lg shadow bg-blue-100">
                         <th className="px-5 py-2">Rank</th>
                         <th className="px-5 py-2">Participant Name</th>
                         <th className="px-5 py-2">Score</th>
@@ -35,7 +35,7 @@ export default function Participant(props) {
                     {participantScores!==null?participantScores.map((score) => {
                         if (score['rank'] === 1) {
                             return (
-                                <tr className="bg-yellow-300 bg-cover rounded-lg shadow">
+                                <tr className="bg-yellow-300 rounded-lg shadow">
                                     <td className="px-5 py-2">👑{score["rank"]}</td>
                                     <td className="px-5 py-2">{score["name"]}</td>
                                     <td className="px-5 py-2">{score["score"]}</td>
@@ -43,7 +43,7 @@ export default function Participant(props) {
                             );
                         } else if (score['rank'] === 2) {
                             return (
-                                <tr className="bg-gray-300 bg-cover rounded-lg shadow">
+                                <tr className="bg-gray-300 rounded-lg shadow">
                                     <td className="px-5 py-2">{score["rank"]}</td>
                                     <td className="px-5 py-2">{score["name"]}</td>
                                     <td className="px-5 py-2">{score["score"]}</td>

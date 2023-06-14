@@ -30,10 +30,10 @@ export default function Generate(props) {
         props.set_token(null)
     }
     return (
-            <form onSubmit={submit} className="flex space-x-4 item-center justify-center">
-                <table className='item-center'>
+            <form onSubmit={submit} className="flex item-center justify-center">
+                <table className='mt-20 w-4/5 max-w-screen-sm item-center'>
                     <tr>
-                        <td className = "flex item-center justify-center ">
+                        <td className = "w-full flex item-center justify-center ">
                             <input
                                 type="text"
                                 value={comp_name}
@@ -45,7 +45,7 @@ export default function Generate(props) {
                     </tr>
 
                     <tr>
-                        <td className = "flex item-center justify-center ">
+                        <td className = "w-full flex item-center justify-center ">
                             <input
                                 type="number"
                                 value={part_size}
@@ -61,7 +61,7 @@ export default function Generate(props) {
                         <td className = "flex item-center justify-center ">
                             <button
                                 type="submit"
-                                className="flex item-center justify-center bg-blue-500 my-2 hover:bg-blue-600 text-white px-6 py-3 rounded-md"
+                                className="w-2/5 min-w-fit bg-blue-500 my-2 hover:bg-blue-600 text-white px-6 py-3 rounded-md"
                             >Generate</button>
 
                         </td>
@@ -69,7 +69,12 @@ export default function Generate(props) {
 
                     <tr>
                         <td className='flex item-center justify-center '>
-                            <button type="reset" onClick={reset} className="flex item-center justify-center bg-blue-500 my-2 hover:bg-blue-600 text-white px-6 py-3 rounded-md">Reset</button>
+                            <button 
+                                type="reset" 
+                                onClick={reset} 
+                                className="w-2/5 min-w-fit flex item-center justify-center bg-blue-500 my-2 hover:bg-blue-600 text-white px-6 py-3 rounded-md"
+                                >Reset
+                            </button>
                         </td>
                     </tr>
 

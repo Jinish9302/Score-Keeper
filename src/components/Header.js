@@ -2,8 +2,8 @@ import React from 'react'
 import {Link} from 'react-router-dom'
 export default function Header(props) {
     return (
-        <div className="bg-gray-800 text-white">
-            <div className="container mx-auto py-4 px-6 flex items-center justify-between">
+        <div className="bg-gray-800 text-white fixed top-0 left-0 right-0">
+            <div className="mx-auto py-4 px-6 flex items-center justify-between">
                 <div className="text-xl font-bold">{props.contest_name}</div>
                 <div className="space-x-4">
                     <Link to="/" className="text-white hover:text-gray-200">Home</Link>
